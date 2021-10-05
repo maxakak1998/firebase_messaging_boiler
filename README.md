@@ -8,8 +8,8 @@ Boiler code setup for handling notification events
  
  # 1. Init Firebase Service
   ```dart
-     final messagingService=FirebaseMessagingService();
-     final remoteMessage = FirebaseMessagingService().await firebaseMessagingService.init();
+     final firebaseMessagingService=FirebaseMessagingService();
+     final remoteMessage = await firebaseMessagingService.init();
      
   ```
   You will get the remote message object after completing initialization if the user has clicked on the notification to open an app
