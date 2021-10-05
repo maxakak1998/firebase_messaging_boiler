@@ -15,15 +15,17 @@ Boiler code setup for handling notification events
   You will get the remote message object after completing initialization if the user has clicked on the notification to open an app
  # 2. Listening the notification envents
   ## Notification comming
-    ```dart
+  ```dart
     firebaseMessagingService.addListener((CustomNotification notification){
       print(notification);
     });
-    ```
+    
+  ```
   ## Notification clicking
-     ```dart
+  ```dart
     firebaseMessagingService.addNotificationClickListener((CustomNotification notification){
       print(notification);
     });
-    ```
+    
+  ```
   
